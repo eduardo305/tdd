@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-console.log('path', path.resolve('/dist'));
 
 const config = {
     entry: path.resolve(__dirname, 'src/index.js'),
