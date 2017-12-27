@@ -10,7 +10,7 @@ const config = {
         historyApiFallback: true,
     },
     output: {
-        path: '/dist',
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: '/dist'
     },
