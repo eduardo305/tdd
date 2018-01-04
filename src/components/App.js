@@ -1,33 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import NewsWrapper from 'news-wrapper';
-
 import buildUrl from 'build-url';
 
-// export default () => {
-//     const news = new NewsWrapper({
-//         token: 'fb616dff3cdf4ff5a66f8689360c6fe9'
-//     });
+import Header from './Header';
+import Main from './Main';
 
-//     const promise = news.search.topheadlines('cnn');
-//     promise.then(({ data }) => console.log('articles', data.articles));
+export default () => {
+    // const news = new NewsWrapper({
+    //     token: 'fb616dff3cdf4ff5a66f8689360c6fe9'
+    // });
 
-//     const sourcePromise = news.search.sources('technology');
-//     sourcePromise.then(({ data }) => console.log('sources', data.sources));
+    // const promise = news.search.topheadlines('cnn');
+    // promise.then(({ data }) => console.log('articles', data.articles));
 
-//     return <div>app</div>;
-// } 
+    // const sourcePromise = news.search.sources('technology');
+    // sourcePromise.then(({ data }) => console.log('sources', data.sources));
 
-class App extends Component {
-    render() {
-        return <div>{this.props.current.source}</div>;
-    }
+    return (
+        <div className='App' style={{ maxWidth: '920px', margin: 'auto' }}>
+            <Header />
+            <Main />
+        </div>
+    );
 }
-
-const mapStateToProps = (state) => {
-    return {
-        current: state.source
-    }
-}
-
-export default connect(mapStateToProps)(App);

@@ -1,0 +1,32 @@
+.NewsThumbnail {
+  font-size: 0.8em;
+  border: none;
+}
+
+.NewsThumbnail a {
+  color: #333;
+}
+
+.NewsThumbnail .photo {
+  height: 250px;
+}
+
+.NewsThumbnail .title {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.NewsThumbnail .author {
+  font-size: 0.8em;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  .NewsThumbnail {
+    padding-right: 20px;
+    border-right: 1px dotted lightgray;
+  }
+}
+    

@@ -29,7 +29,8 @@ const config = {
                 { loader: "css-loader" }
             ]
         }]
-    }
+    },
+    devtool: 'source-map'
 }
 
 module.exports = config;
