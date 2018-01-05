@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Spinner from './Spinner';
 import NewsThumbnail from './NewsThumbnail';
 import '../styles/NewsGrid.css';
 
@@ -32,6 +33,12 @@ export class NewsGrid extends Component {
   }
 
   render() {
+    const { news } = this.state;
+
+    if (news.length === 0) {
+      return <Spinner />;
+    }
+
     return <div className='NewsGrid'>{ this.renderNews() }</div>
   }
 }

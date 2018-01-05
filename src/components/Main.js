@@ -4,6 +4,7 @@ import NewsWrapper from 'news-wrapper';
 import NewsGrid from './NewsGrid';
 
 
+
 const newsWrapper = new NewsWrapper({
   token: 'fb616dff3cdf4ff5a66f8689360c6fe9'
 });
